@@ -1,0 +1,30 @@
+{
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "version": "0.0.0",
+  "command": {
+    "version": {
+      "allowBranch": ["master", "dark", "main"],
+      "message": "chore(versions): 😊 publish %s",
+      "includeMergedTags": true,
+      "exact": true
+    },
+    "publish": {
+      "registry": "http://121.43.104.29:4873/"
+    }
+  },
+  "packages": ["packages/*"],
+  "ignoreChanges": [
+    "**/*.md",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.e2e.ts",
+    "**/demos/**",
+    "**/coverage/**",
+    "**/fixtures/**",
+    "**/dist/**",
+    "**/lib/**",
+    "**/esm/**",
+    "**/test/**"
+  ]
+}
