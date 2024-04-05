@@ -1,6 +1,6 @@
 {
   "name": "@test/core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "yanyongchao <yanyongchao@pinming.cn>",
   "homepage": "",
   "license": "ISC",
@@ -13,5 +13,6 @@
   },
   "scripts": {
     "test": "node ./__tests__/@demo/core.test.js"
-  }
+  },
+  "gitHead": "e23ce5faf566f861781273112deeb11a493a6a4f"
 }

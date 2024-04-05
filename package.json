@@ -5,8 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish from-package",
-    "version": "lerna version && lerna publish from-package"
+    "publish-packages": "lerna publish from-package"
   },
   "dependencies": {},
   "devDependencies": {
