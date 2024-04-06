@@ -4,11 +4,7 @@
   "version": "0.0.4",
   "command": {
     "version": {
-      "allowBranch": [
-        "master",
-        "dark",
-        "main"
-      ],
+      "allowBranch": ["master", "main"],
       "message": "chore(versions): 😊 publish %s",
       "includeMergedTags": true,
       "exact": true
@@ -17,9 +13,7 @@
       "registry": "http://121.43.104.29:4873/"
     }
   },
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "ignoreChanges": [
     "**/*.md",
     "**/*.spec.tsx",

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "rootDirs": ["./"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "react",
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "lib": ["es7", "dom"],
+    "skipLibCheck": true,
+    "typeRoots": ["node", "node_modules/@types", "./typings"]
+  },
+  "exclude": ["./packages/*/esm", "./packages/*/lib"]
+}
