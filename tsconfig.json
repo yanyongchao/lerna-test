@@ -10,7 +10,8 @@
     "rootDirs": ["./"],
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
     },
     "jsx": "react",
     "alwaysStrict": true,

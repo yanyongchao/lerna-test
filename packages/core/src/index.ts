@@ -1,1 +1,1 @@
-export const name1 = 'sssx';
+export * from './space';
