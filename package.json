@@ -12,10 +12,7 @@
   "config": {
     "ghooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "node ./scripts/validate-commit-msg.js"
-    },
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "commit-msg": "commitlint --edit"
     }
   },
   "lint-staged": {
@@ -30,6 +27,9 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "@commitlint/prompt-cli": "^14.1.0",
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
