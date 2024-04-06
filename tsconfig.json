@@ -19,7 +19,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "lib": ["es7", "dom"],
+    "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "typeRoots": ["node", "node_modules/@types", "./typings"]
   },

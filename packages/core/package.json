@@ -2,9 +2,9 @@
   "name": "@test/core",
   "version": "0.0.6",
   "author": "yanyongchao <yanyongchao@pinming.cn>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "src/index.js",
+  "main": "dist/core.production.js",
+  "module": "esm",
+  "types": "esm/index.d.ts",
   "files": [
     "src",
     "lib"
@@ -13,7 +13,8 @@
     "access": "public"
   },
   "scripts": {
-    "test": "node ./__tests__/@demo/core.test.js"
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
+    "build:umd": "rollup --config --bundleConfigAsCjs"
   },
   "gitHead": "e23ce5faf566f861781273112deeb11a493a6a4f"
 }
