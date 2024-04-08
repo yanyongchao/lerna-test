@@ -9,13 +9,10 @@
     "src",
     "esm"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:esm && npm run build:umd",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "build:umd": "rollup --config --bundleConfigAsCjs"
   },
-  "gitHead": "fb86544b31b8dbfa6c9eb8be16e3739e6fa34752"
+  "gitHead": "8912ef6b7c6199516b850975e5d97a8fc1dd6ec1"
 }
