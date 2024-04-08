@@ -5,7 +5,6 @@
   "main": "dist/core.production.js",
   "module": "esm",
   "types": "esm/index.d.ts",
-  "license": "MIT",
   "files": [
     "src",
     "esm"
@@ -18,5 +17,5 @@
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "build:umd": "rollup --config --bundleConfigAsCjs"
   },
-  "gitHead": "f2ccb548e592b90e2439c128124710aef2892064"
+  "gitHead": "fb86544b31b8dbfa6c9eb8be16e3739e6fa34752"
 }
