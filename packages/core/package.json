@@ -1,13 +1,13 @@
 {
-  "name": "@test/core",
-  "version": "0.0.6",
+  "name": "@shjy/test",
+  "version": "0.0.0",
   "author": "yanyongchao <yanyongchao@pinming.cn>",
   "main": "dist/core.production.js",
   "module": "esm",
   "types": "esm/index.d.ts",
   "files": [
     "src",
-    "lib"
+    "esm"
   ],
   "publishConfig": {
     "access": "public"

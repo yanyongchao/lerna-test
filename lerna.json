@@ -1,7 +1,7 @@
 {
   "npmClient": "pnpm",
   "useWorkspaces": true,
-  "version": "0.0.4",
+  "version": "0.0.0",
   "command": {
     "version": {
       "allowBranch": ["master", "main"],
@@ -10,7 +10,7 @@
       "exact": true
     },
     "publish": {
-      "registry": "http://121.43.104.29:4873/"
+      "registry": "http://10.0.3.86:8081/nexus/repository/npm-host/"
     }
   },
   "packages": ["packages/*"],
