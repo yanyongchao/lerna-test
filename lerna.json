@@ -10,7 +10,7 @@
       "exact": true
     },
     "publish": {
-      "registry": "http://10.0.3.86:8081/nexus/repository/npm-host/"
+      "registry": "http://47.99.104.125:4873/"
     }
   },
   "packages": ["packages/*"],
