@@ -1,6 +1,10 @@
 {
   "name": "@shjy/test",
   "version": "0.0.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "yanyongchao <yanyongchao@pinming.cn>",
   "main": "dist/core.production.js",
   "module": "esm",
