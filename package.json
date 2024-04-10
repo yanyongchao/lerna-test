@@ -1,9 +1,6 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "build:esm": "pnpm -r run build:esm",
     "build:umd": "pnpm -r run build:umd",
