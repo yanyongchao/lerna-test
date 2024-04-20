@@ -17,7 +17,7 @@ const config = {
       format: 'es',
     },
   ],
-  external: ['vue'],
+  external: ['vue', 'element-ui'],
   plugins: [
     resolve({
       extensions: ['.vue'],
@@ -31,7 +31,7 @@ const config = {
       exclude: '**/node_modules/**',
     }),
     commonjs(),
-    terser(),
+    // terser(),
   ],
 };
 

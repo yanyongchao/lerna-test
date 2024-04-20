@@ -10,9 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "element-ui": "^2.15.14"
+  },
   "devDependencies": {
     "rollup-plugin-vue": "^5.0.1",
     "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "babel-plugin-component": "^1.1.1"
   }
 }
