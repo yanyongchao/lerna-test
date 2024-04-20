@@ -1,0 +1,18 @@
+{
+  "name": "@test/pro-element",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/pro-element.production.js",
+  "module": "src",
+  "scripts": {
+    "build": "rollup --config --bundleConfigAsCjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

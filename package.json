@@ -7,6 +7,7 @@
   "scripts": {
     "build:esm": "pnpm -r run build:esm",
     "build:umd": "pnpm -r run build:umd",
+    "build:pro-element": "pnpm --filter=./packages/pro-element run build",
     "build": "pnpm -r run build",
     "release": "lerna publish from-package"
   },
