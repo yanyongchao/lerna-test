@@ -5,11 +5,12 @@ import injectProcessEnv from 'rollup-plugin-inject-process-env';
 import json from '@rollup/plugin-json';
 import ignoreImport from 'rollup-plugin-ignore-import';
 import { terser } from 'rollup-plugin-terser';
+import path from 'path';
 
 const presets = () => {
   return [
     typescript({
-      tsconfig: './tsconfig.json',
+      tsconfig: path.resolve(__dirname, 'tsconfig.build.json'),
       tsconfigOverride: {
         compilerOptions: {
           module: 'ESNext',
@@ -42,7 +43,12 @@ const createEnvPlugin = (env) => {
   );
 };
 
-export default (filename, targetName, format = 'umd', input = 'src/index.ts') => [
+export default (
+  filename,
+  targetName,
+  format = 'umd',
+  input = 'src/index.ts',
+) => [
   {
     input: input,
     output: {

@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:esm && npm run build:umd && npm run create:style",
-    "build:esm": "rimraf -rf esm && tsc --project tsconfig.build.json --module es2015 --outDir esm && npm run create:style",
+    "build:esm": "rimraf -rf esm && tsc --project tsconfig.build.json --module es2015  && npm run create:style",
     "build:umd": "rollup --config --bundleConfigAsCjs",
     "create:style": "ts-node create-style"
   },
