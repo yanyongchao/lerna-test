@@ -10,7 +10,7 @@
       "exact": true
     },
     "publish": {
-      "registry": "http://47.99.104.125:4873/"
+      "registry": "http://121.196.246.38:4873"
     }
   },
   "packages": ["packages/*"],
