@@ -1,9 +1,9 @@
 {
   "name": "@test/pro-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/pro-element.production.js",
-  "module": "src",
+  "module": "esm/pro-element.production.js",
   "scripts": {
     "build": "rollup --config --bundleConfigAsCjs"
   },
