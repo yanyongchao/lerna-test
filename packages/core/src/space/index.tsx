@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Space: React.FC = () => {
-  return <div className="word">x1x</div>;
+  return <div className="word">xx1x</div>;
 };
 
 export default Space;
