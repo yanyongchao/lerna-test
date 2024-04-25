@@ -14,6 +14,8 @@ export default {
 </script>
 <style>
 .div {
+  font-weight: 600;
   color: red;
+  background: red;
 }
 </style>
