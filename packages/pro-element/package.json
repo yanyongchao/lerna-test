@@ -5,7 +5,9 @@
   "main": "dist/pro-element.production.js",
   "module": "esm/pro-element.production.js",
   "scripts": {
-    "build": "rollup --config --bundleConfigAsCjs"
+    "build": "rollup --config --bundleConfigAsCjs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "publishConfig": {
     "access": "public"
@@ -19,13 +21,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "element-ui": "^2.15.14"
+    "element-ui": "^2.15.14",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
+    "@vuepress/plugin-register-components": "^1.9.10",
     "babel-plugin-component": "^1.1.1",
+    "core-js": "2.x",
+    "highlight.js": "^9.15.8",
+    "inputmask": "^3.3.11",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "rollup-plugin-vue": "^5.0.1",
-    "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10"
+    "vue-highlight.js": "^2.2.0",
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.9.10"
   },
   "gitHead": "6584269713204c9e22a8b54b0f2e95126eef6f67"
 }
