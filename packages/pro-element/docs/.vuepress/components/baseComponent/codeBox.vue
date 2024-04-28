@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .code {
   padding: 40px 0;
   .code--title {

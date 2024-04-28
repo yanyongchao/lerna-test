@@ -45,10 +45,10 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .api-wrap {
   padding: 40px 0;
-  + .api-wrap {
+  & + .api-wrap {
     margin: 40px 0;
   }
   &:first-child {

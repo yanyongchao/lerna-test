@@ -18,8 +18,8 @@
       "pretty-quick --staged",
       "git add"
     ],
-    "*.{css,less,scss}": [
-      "stylelint --fix",
+    "*.{vue,css,less,scss}": [
+      "stylelint --fix --allow-empty-input",
       "pretty-quick --staged",
       "git add"
     ],
