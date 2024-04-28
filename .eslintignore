@@ -5,3 +5,4 @@ esm
 build.ts
 **/*.js
 **/__tests__
+docs
