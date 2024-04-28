@@ -10,7 +10,7 @@
     "build": "pnpm -r run build",
     "release": "lerna publish from-package",
     "prepare": "husky install",
-    "lint": "stylelint packages/**/*.{vue,css,scss,less} --fix && eslint --ext .ts,.tsx --fix"
+    "lint": "stylelint packages/**/*.{vue,css,scss,less} --fix --allow-empty-input && eslint --ext .ts,.tsx --fix"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
