@@ -12,7 +12,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
 .div {
   font-weight: 600;
   color: red;
