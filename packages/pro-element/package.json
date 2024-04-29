@@ -28,16 +28,26 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
     "@vuepress/plugin-register-components": "^1.9.10",
+    "autoprefixer": "^10.4.19",
     "babel-plugin-component": "^1.1.1",
     "core-js": "2.x",
+    "cssnano": "^7.0.1",
     "highlight.js": "^9.15.8",
     "inputmask": "^3.3.11",
-    "less": "^3.9.0",
-    "less-loader": "^5.0.0",
     "rollup-plugin-vue": "^5.0.1",
+    "sass": "^1.75.0",
+    "sass-loader": "^10.1.1",
     "vue-highlight.js": "^2.2.0",
     "vue-template-compiler": "^2.6.10",
     "vuepress": "^1.9.10"
   },
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
   "gitHead": "6584269713204c9e22a8b54b0f2e95126eef6f67"
 }

@@ -14,8 +14,12 @@ export default {
 </script>
 <style lang="scss">
 .div {
+  display: flex;
   font-weight: 600;
   color: red;
   background: red;
+  span {
+    color: blue;
+  }
 }
 </style>

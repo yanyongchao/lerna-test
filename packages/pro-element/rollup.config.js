@@ -3,6 +3,9 @@ import vue from 'rollup-plugin-vue';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
+import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 
 const config = {
   input: 'src/index.js',
@@ -31,6 +34,9 @@ const config = {
       exclude: '**/node_modules/**',
     }),
     commonjs(),
+    postcss({
+      plugins: [autoprefixer(), cssnano()],
+    }),
     // terser(),
   ],
 };
