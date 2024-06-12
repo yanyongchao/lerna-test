@@ -6,6 +6,12 @@ import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
+import pkg from './package.json';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const config = {
   input: 'src/index.js',
@@ -16,8 +22,12 @@ const config = {
       name: 'proElement',
     },
     {
-      file: './esm/pro-element.production.js',
+      dir: path.resolve(__dirname, 'esm'),
       format: 'es',
+      name: '@test/pro-element',
+      exports: 'named',
+      preserveModules: true, // 保留模块结构
+      preserveModulesRoot: path.resolve(__dirname, 'src'),
     },
   ],
   external: ['vue', 'element-ui'],
@@ -37,7 +47,7 @@ const config = {
     postcss({
       plugins: [autoprefixer(), cssnano()],
     }),
-    // terser(),
+    terser(),
   ],
 };
 
