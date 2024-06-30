@@ -1,0 +1,21 @@
+{
+  "name": "@test/core",
+  "version": "0.0.7",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yanyongchao <yanyongchao@pinming.cn>",
+  "main": "esm",
+  "module": "esm",
+  "types": "esm/index.d.ts",
+  "files": [
+    "src",
+    "esm"
+  ],
+  "scripts": {
+    "build": "rimraf -rf lib esm dist && npm run build:esm && npm run build:umd",
+    "build:esm": "rimraf -rf esm && tsc --project tsconfig.build.json --module es2015",
+    "build:umd": "rollup --config --bundleConfigAsCjs"
+  },
+  "gitHead": "8912ef6b7c6199516b850975e5d97a8fc1dd6ec1"
+}
